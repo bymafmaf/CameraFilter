@@ -17,8 +17,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     if ((tex.z <= 1.0 && tex.z >= 0.1) || (tex.y <= 1.0 && tex.y >= 0.1))
       discard;
 
-	vec3 col = vec3(0, tex.y, tex.z);
-    fragColor = vec4(col,1.0);
+	fragColor = vec4(tex,1.0);
 }
 
 void main() {

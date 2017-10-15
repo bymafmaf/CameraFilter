@@ -14,11 +14,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 	//vec3 col = mix(vec3(0.1, 0.36, 0.8) * (1.0-2.0*abs(shade-0.5)), vec3(1.06, 0.8, 0.55), 1.0-shade);
 
-    if ((tex.x <= 1.0 && tex.x >= 0.5) || (tex.y <= 1.0 && tex.y >= 0.1))
+    if ((tex.x <= 1.0 && tex.x >= 0.1) || (tex.y <= 1.0 && tex.y >= 0.1))
       discard;
 
-	vec3 col = vec3(0, tex.y, tex.z);
-    fragColor = vec4(col,1.0);
+	fragColor = vec4(tex,1.0);
 }
 
 void main() {
