@@ -31,7 +31,7 @@ public class GreenFilter extends CameraFilter {
         super(context);
 
         // Build shaders
-        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.blue_filter);
+        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.green_filter);
     }
 
     @Override

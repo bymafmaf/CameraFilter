@@ -15,7 +15,7 @@
         />
     <item
         android:id="@+id/filter1"
-        android:title="Blueorange"
+        android:title="Blue"
         app:showAsAction="never"
         />
     <item

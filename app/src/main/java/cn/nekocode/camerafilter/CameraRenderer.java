@@ -35,7 +35,9 @@ import javax.microedition.khronos.egl.EGLSurface;
 
 import cn.nekocode.camerafilter.filter.BlueFilter;
 import cn.nekocode.camerafilter.filter.CameraFilter;
+import cn.nekocode.camerafilter.filter.GreenFilter;
 import cn.nekocode.camerafilter.filter.OriginalFilter;
+import cn.nekocode.camerafilter.filter.RedFilter;
 
 /**
  * @author nekocode (nekocode.cn@gmail.com)
@@ -125,8 +127,8 @@ public class CameraRenderer implements Runnable, TextureView.SurfaceTextureListe
         // Setup camera filters map
         cameraFilterMap.append(R.id.filter0, new OriginalFilter(context));
         cameraFilterMap.append(R.id.filter1, new BlueFilter(context));
-        cameraFilterMap.append(R.id.filter2, new BlueFilter(context));
-        cameraFilterMap.append(R.id.filter3, new BlueFilter(context));
+        cameraFilterMap.append(R.id.filter2, new GreenFilter(context));
+        cameraFilterMap.append(R.id.filter3, new RedFilter(context));
 
         setSelectedFilter(selectedFilterId);
 
