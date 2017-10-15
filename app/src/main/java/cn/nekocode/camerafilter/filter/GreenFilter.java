@@ -24,14 +24,14 @@ import cn.nekocode.camerafilter.R;
 /**
  * @author nekocode (nekocode.cn@gmail.com)
  */
-public class AsciiArtFilter extends CameraFilter {
+public class GreenFilter extends CameraFilter {
     private int program;
 
-    public AsciiArtFilter(Context context) {
+    public GreenFilter(Context context) {
         super(context);
 
         // Build shaders
-        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.ascii_art);
+        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.blue_filter);
     }
 
     @Override

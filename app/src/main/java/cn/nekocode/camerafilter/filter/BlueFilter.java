@@ -24,14 +24,14 @@ import cn.nekocode.camerafilter.R;
 /**
  * @author nekocode (nekocode.cn@gmail.com)
  */
-public class ChromaticAberrationFilter extends CameraFilter {
+public class BlueFilter extends CameraFilter {
     private int program;
 
-    public ChromaticAberrationFilter(Context context) {
+    public BlueFilter(Context context) {
         super(context);
 
         // Build shaders
-        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.chromatic_aberration);
+        program = MyGLUtils.buildProgram(context, R.raw.vertext, R.raw.blue_filter);
     }
 
     @Override
