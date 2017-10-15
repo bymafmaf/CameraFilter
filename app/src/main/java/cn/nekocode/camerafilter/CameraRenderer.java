@@ -143,26 +143,10 @@ public class CameraRenderer implements Runnable, TextureView.SurfaceTextureListe
 
         // Setup camera filters map
         cameraFilterMap.append(R.id.filter0, new OriginalFilter(context));
-        cameraFilterMap.append(R.id.filter1, new EdgeDetectionFilter(context));
-        cameraFilterMap.append(R.id.filter2, new PixelizeFilter(context));
-        cameraFilterMap.append(R.id.filter3, new EMInterferenceFilter(context));
-        cameraFilterMap.append(R.id.filter4, new TrianglesMosaicFilter(context));
-        cameraFilterMap.append(R.id.filter5, new LegofiedFilter(context));
-        cameraFilterMap.append(R.id.filter6, new TileMosaicFilter(context));
-        cameraFilterMap.append(R.id.filter7, new BlueorangeFilter(context));
-        cameraFilterMap.append(R.id.filter8, new ChromaticAberrationFilter(context));
-        cameraFilterMap.append(R.id.filter9, new BasicDeformFilter(context));
-        cameraFilterMap.append(R.id.filter10, new ContrastFilter(context));
-        cameraFilterMap.append(R.id.filter11, new NoiseWarpFilter(context));
-        cameraFilterMap.append(R.id.filter12, new RefractionFilter(context));
-        cameraFilterMap.append(R.id.filter13, new MappingFilter(context));
-        cameraFilterMap.append(R.id.filter14, new CrosshatchFilter(context));
-        cameraFilterMap.append(R.id.filter15, new LichtensteinEsqueFilter(context));
-        cameraFilterMap.append(R.id.filter16, new AsciiArtFilter(context));
-        cameraFilterMap.append(R.id.filter17, new MoneyFilter(context));
-        cameraFilterMap.append(R.id.filter18, new CrackedFilter(context));
-        cameraFilterMap.append(R.id.filter19, new PolygonizationFilter(context));
-        cameraFilterMap.append(R.id.filter20, new JFAVoronoiFilter(context));
+        cameraFilterMap.append(R.id.filter1, new BlueorangeFilter(context));
+        cameraFilterMap.append(R.id.filter2, new BlueorangeFilter(context));
+        cameraFilterMap.append(R.id.filter3, new BlueorangeFilter(context));
+
         setSelectedFilter(selectedFilterId);
 
         // Create texture for camera preview
